@@ -2,9 +2,18 @@ import random
 
 OPTIONS = ('rock', 'paper', 'scissor')
 
+def singularize(word):
+    word = word.lower()
+    if word == 'scissors':
+        return 'scissor'
+    elif word.endswith('s'):
+        return word[:-1]  # Elimina la 's' final para convertirla en singular
+    return word
+
 def get_user_option():
     while True:
         user_option = input('Rock, Paper, Scissors => ').lower()
+        user_option = singularize(user_option)
         if user_option in OPTIONS:
             return user_option
         print('Invalid option. Please choose Rock, Paper, or Scissor.')
