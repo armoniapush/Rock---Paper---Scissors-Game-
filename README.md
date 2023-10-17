@@ -2,44 +2,45 @@
 
 ![Rock, Paper, Scissors](https://miro.medium.com/v2/resize:fit:800/1*8du96SQUQ0NlWmWvVu20Zw.png)
 
-## Descripción 📝
-Bienvenido al juego de "Piedra, Papel o Tijera". En este juego, te enfrentarás a una máquina (representada por el bot) en una emocionante competencia. El objetivo es ganar 3 rondas antes que tu oponente.
+## Description 📝
+Welcome to the "Rock, Paper, or Scissors" game in its console version. In this game, you will face off against a machine (represented by the bot) in an exciting competition. The goal is to win 3 rounds before your opponent.
 
-## 🎮 Cómo Jugar
-1. **Clonar o Descargar**: Comienza clonando este repositorio o descargándolo a tu máquina local.
+## 🎮 How to Play
+1. **Clone or Download**: Start by cloning this repository or downloading it to your local machine.
 
-2. **Iniciar el Juego**: Abre una terminal y navega al directorio del repositorio.
+2. **Install Python 3.x**: If you don't have Python 3.x installed, download and install it from [python.org](https://www.python.org/downloads/).
 
-3. **Ejecutar el Juego**: Utiliza Python para ejecutar el juego:
+3. **Start the Game**: Open a terminal on your Linux system and navigate to the repository directory.
+
+4. **Run the Game**: Use Python to run the game:
     ```bash
     python3 main.py
     ```
 
-4. **Elección del Jugador**: Se te pedirá que elijas entre "rock" (piedra), "paper" (papel) o "scissor" (tijera). Ingresa tu elección.
+5. **Player's Choice**: You will be prompted to choose between "rock," "paper," or "scissor." Enter your choice.
 
-5. **Elección del Bot**: El bot seleccionará su elección de forma aleatoria.
+6. **Bot's Choice**: The bot will randomly select its choice.
 
-6. **Determinar el Ganador**: Se determinará el ganador de la ronda según las reglas de "Rock, Paper, Scissors".
+7. **Determining the Winner**: The winner of the round will be determined according to the "Rock, Paper, Scissors" rules.
 
-7. **Ronda Tras Ronda**: El juego continuará hasta que un jugador alcance 3 victorias.
+8. **Round by Round**: The game will continue until one player reaches 3 victories.
 
-8. **Fin del Juego**: Al final, se anunciará al ganador del juego.
+9. **End of the Game**: At the end, the winner of the game will be announced.
 
-## Reglas del Juego 📜
-- Piedra 🪨 aplasta Tijera ✂.
-- Papel 📄 envuelve Piedra 🪨.
-- Tijera ✂ corta Papel 📄.
+## Game Rules 📜
+- Rock 🪨 crushes Scissors ✂.
+- Paper 📄 wraps Rock 🪨.
+- Scissors ✂ cuts Paper 📄.
 
-## Requisitos 🛠️
-- Python 3.x instalado en tu máquina.
+## Requirements 🛠️
+- Python 3.x installed on your machine. [Download Python](https://www.python.org/downloads/)
 
-## Capturas de Pantalla 🖼️
-Agrega capturas de pantalla del juego en acción para dar una vista previa a los usuarios.
+## Screenshots 🖼️
+Add screenshots of the game in action to give users a visual preview of the game.
 
-## Contribuciones 🤝
-Si deseas contribuir al juego, siéntete libre de hacer un fork del repositorio, implementar mejoras y enviar una solicitud de extracción.
+## Contributions 🤝
+If you'd like to contribute to the game, feel free to fork the repository, implement improvements, and submit a pull request.
 
-## Notas ℹ️
-- Puedes personalizar el juego o agregar nuevas características según tus preferencias.
-- ¡Diviértete jugando "Rock, Paper, Scissors (Armonia Push Game)"!
-
+## Notes ℹ️
+- You can customise the game or add new features to your preferences.
+- Enjoy playing "Rock, Paper, Scissors (Armonia Push Game)!"
