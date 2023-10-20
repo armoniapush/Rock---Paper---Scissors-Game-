@@ -72,6 +72,8 @@ def main():
         elif winner == 'Bot':
             bot_wins += 1
 
+        print(f'Score: Player {user_wins} - {bot_wins} Bot')
+
     print("*" * 30)
     print('Game Over')
     print('User wins the game!' if user_wins >
