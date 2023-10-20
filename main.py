@@ -1,14 +1,20 @@
+import re
 import random
 
 OPTIONS = ('rock', 'paper', 'scissor')
 
+
 def singularize(word):
-    word = word.lower()
-    if word == 'scissors':
-        return 'scissor'
-    elif word.endswith('s'):
-        return word[:-1]  # Elimina la 's' final para convertirla en singular
+    singular_forms = {
+        'scissors': 'scissor',
+        'papers': 'paper',
+        'rocks': 'rock'
+    }
+    if word in singular_forms:
+        return singular_forms[word]
+    word = re.sub(r's$', '', word)
     return word
+
 
 def get_user_option():
     while True:
@@ -17,6 +23,7 @@ def get_user_option():
         if user_option in OPTIONS:
             return user_option
         print('Invalid option. Please choose Rock, Paper, or Scissor.')
+
 
 def determine_winner(user_option, bot_option):
     if user_option == bot_option:
@@ -28,31 +35,33 @@ def determine_winner(user_option, bot_option):
     else:
         return 'Bot'
 
+
 def play_round():
     user_option = get_user_option()
     bot_option = random.choice(OPTIONS)
-    
+
     print(f'Player => {user_option}')
     print(f'Bot => {bot_option}')
-    
+
     print("*" * 30)
-    
+
     winner = determine_winner(user_option, bot_option)
     if winner == 'Draw':
         print('Draw')
     else:
         print(f'{winner} wins this round!')
-    
+
     print("*" * 30)
 
     return winner
+
 
 def main():
     print("*" * 30)
     print("Rock - Paper - Scissors (Armonia Push Game)")
     print("Start Game")
     print("*" * 30)
-    
+
     user_wins = 0
     bot_wins = 0
 
@@ -65,11 +74,13 @@ def main():
 
     print("*" * 30)
     print('Game Over')
-    print('User wins the game!' if user_wins > bot_wins else 'Bot wins the game!')
+    print('User wins the game!' if user_wins >
+          bot_wins else 'Bot wins the game!')
 
     play_again = input('Do you want to play again? (yes/no): ').lower()
     if play_again == 'yes':
         main()
+
 
 if __name__ == "__main__":
     main()
